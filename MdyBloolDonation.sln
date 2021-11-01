@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdyBloolDonation", "MdyBloolDonation.csproj", "{D2772B9D-3700-4E6A-B60E-FDB21C06467E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BloodInstaller", "..\BloodInstaller\BloodInstaller.vdproj", "{695BDD55-D4DA-4DF3-A4DC-AE2088817F8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2772B9D-3700-4E6A-B60E-FDB21C06467E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2772B9D-3700-4E6A-B60E-FDB21C06467E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2772B9D-3700-4E6A-B60E-FDB21C06467E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2772B9D-3700-4E6A-B60E-FDB21C06467E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695BDD55-D4DA-4DF3-A4DC-AE2088817F8B}.Debug|Any CPU.ActiveCfg = Debug
+		{695BDD55-D4DA-4DF3-A4DC-AE2088817F8B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1417D89F-7099-4F66-A336-FE1DBBE7F915}
+	EndGlobalSection
+EndGlobal

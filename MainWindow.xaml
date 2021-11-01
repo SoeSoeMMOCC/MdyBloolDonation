@@ -1,0 +1,99 @@
+﻿<Window x:Class="MdyBloolDonation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:MdyBloolDonation"
+        WindowStartupLocation="CenterScreen"        
+        mc:Ignorable="d" FontWeight="ExtraBold" FontStyle="Normal" FontFamily="Times New Roman"
+        WindowStyle="SingleBorderWindow"
+        Title="Blood Donation History" Height="700" Width="1200" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <!--<Grid x:Name="gridHeader" Grid.Row="0" Grid.ColumnSpan="2" Background="#ec0101" MouseDown="gridHeader_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                -->
+        <!--<Label Content="HIS Billing System" Grid.Row="0" Grid.ColumnSpan="2" FontFamily="Times New Roman" FontSize="20"
+               Foreground="#2d6187" FontWeight="ExtraBold"
+               />-->
+        <!--
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" x:Name="btn_account">
+                        <materialDesign:PackIcon Kind="Account" />
+                    </Button>
+                    <Label Width="100" Height="25" Background="{x:Null}"  Foreground="White" x:Name="txt_userName"
+                                    Margin="0 5 0 0"
+                               HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Left"
+                               >
+
+                    </Label>
+                    <Button Width="33" Height="30" x:Name="btnPower" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="btnPower_Click" >
+                        <materialDesign:PackIcon Kind="Power" />
+                    </Button>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>-->
+        <Grid  Grid.Row="0" Grid.Column="0" Background="
+                  #effad3" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <!--<Grid.Effect>
+                <DropShadowEffect BlurRadius="20" Color="#eb8f8f" RenderingBias="Quality" ShadowDepth="3"></DropShadowEffect>
+            </Grid.Effect>-->
+            <Grid Background="#ec0101">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="#eb8f8f" RenderingBias="Quality" ShadowDepth="3"></DropShadowEffect>
+                </Grid.Effect>
+                <materialDesign:PackIcon Kind="Blood" VerticalAlignment="Center" Foreground="#f1f3de"
+                                         FontSize="18" Width="40" Height="40"
+                                         />
+                <TextBlock Text="Donate Blood" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI  Black" Foreground="#f1f3de" FontSize="18"></TextBlock>
+            </Grid>
+            <StackPanel Grid.Row="1">
+                <StackPanel.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="#eb8f8f" RenderingBias="Quality" ShadowDepth="3"></DropShadowEffect>
+                </StackPanel.Effect>
+                <Image Height="151" VerticalAlignment="Top" Margin="0,0,0,0" Source="photo1.jpg" />
+                <Image Height="175" VerticalAlignment="Top" Margin="0,0,0,0" Source="photo2.jpg" />
+                <Image Height="250" VerticalAlignment="Top" Margin="0,0,0,0" Source="photo3.png" Stretch="Uniform" />
+
+            </StackPanel>
+            <!--<Border CornerRadius="8" BorderThickness="3 3 3 3" BorderBrush=" #28abb9" Grid.Column="0" Grid.Row="0">
+                    <Button x:Name="btn_item" Content="Item Information" BorderBrush="Transparent"/>
+                </Border>
+                <Border CornerRadius="8" BorderThickness="3 3 3 3" BorderBrush=" #28abb9" Grid.Column="0" Grid.Row="1">
+                    <Button x:Name="btn_sale" Content="Sale Information" BorderBrush="Transparent" />
+                </Border>
+                <Border CornerRadius="8" BorderThickness="3 3 3 3" BorderBrush=" #28abb9" Grid.Column="0" Grid.Row="2">
+                    <Button x:Name="btn_purchase" Content="Purchase Information" BorderBrush="Transparent" />
+                </Border>-->
+        </Grid>
+
+        <Grid x:Name="grid" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="230*"/>
+                <RowDefinition Height="321*"/>
+            </Grid.RowDefinitions>
+            <ContentControl x:Name="gridcontent" Content="ItemView" Grid.RowSpan="2"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.ColumnSpan="2" Background="#ec0101">
+
+        </Grid>
+
+    </Grid>
+</Window>

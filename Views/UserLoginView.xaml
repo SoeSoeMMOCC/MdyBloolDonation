@@ -1,0 +1,49 @@
+﻿<Window x:Class="MdyBloolDonation.Views.UserLoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:MdyBloolDonation.Views"
+         WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" WindowStyle="None"
+        Title="Login Window" Height="500" Width="350">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionaryMargins.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Background="#FFF1EDED" MouseDown="Grid_MouseDown">
+        <Rectangle Height="280" VerticalAlignment="Top" Grid.RowSpan="2" >
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#28abb9"/>
+                    <GradientStop Color="#effad3" Offset="1"/>
+                    <GradientStop Color="#ec0101"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image  Width="100" Height="100" VerticalAlignment="Top" Margin="125,20,125,0" Source="home.png" />
+        <Rectangle Width="280" Height="240" Fill="White" VerticalAlignment="Bottom" Margin="0,100"  RadiusY="10" RadiusX="10">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="1" 
+                                  Color="White"
+                                  RenderingBias="Quality" ShadowDepth="1" Direction="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,100" >
+            <TextBlock Text="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" FontSize="18" Foreground="Gray"/>
+            <StackPanel VerticalAlignment="Center" Margin="10">
+                <TextBox materialDesign:HintAssist.Hint="Staff Name" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,10" x:Name="txt_name" />
+                <PasswordBox materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,10" x:Name="txt_password" />
+            </StackPanel>
+        </Grid>
+        <Button VerticalAlignment="Bottom" Margin="0,85" Width="150" Content="LOGIN" x:Name="btn_Login" Click="btn_Login_Click"
+                Background="#ec0101"
+                />
+        <!--<TextBlock Text="Forget Password?" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,50"/>-->
+    </Grid>
+</Window>
